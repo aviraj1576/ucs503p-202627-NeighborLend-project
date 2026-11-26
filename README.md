@@ -1,45 +1,38 @@
-# UCS503P Project Template
+# NeighborLend: UCS503P Project (2026-27 Odd Semester)
 
-This is a project template for UCS503P Project (2026-27
-ODD). 
+A hyper-local peer-to-peer rental platform. People list items they rarely use,
+and others nearby find them, negotiate a price in chat, pay the rent and a
+refundable deposit (Razorpay Test Mode), and return the item, with condition
+photos at handover and return.
 
-There are 3 reports in LaTeX format, namely *a*)
-Project Proposal, *b*) Project Report Prototype Stage,
-and *c*) Project Report Final -- each in their
-respective folders.
+- **Project page:** <https://aviraj1576.github.io/ucs503p-202627-NeighborLend-project/>
+- **Live application:** <https://neighborlend.vercel.app>
+- **Application source:** [aviraj1576/NeighborLend](https://github.com/aviraj1576/NeighborLend), included here as the `code/` submodule
 
-Journals are stacked under the folder `journals`, one
-folder for each team member.  A sample entry has been
-made for example.
+**Group 3Q14**, B.E. Third Year CSE, TIET Patiala. Submitted to Ms. Sandeep Kaur.
 
-The source code is contained within the folder `code`.
+| Roll No.   | Name                     | Journal |
+|------------|--------------------------|---------|
+| 1024170101 | Harsimrat Singh Malhotra | [`journals/1024170101-harsimrat`](journals/1024170101-harsimrat/) |
+| 1024170102 | Aviraj Singh             | [`journals/1024170102-aviraj`](journals/1024170102-aviraj/) |
+| 1024170105 | Tikshan Garg             | [`journals/1024170105-tikshan`](journals/1024170105-tikshan/) |
+| 1024170118 | Vansh Kapil              | [`journals/1024170118-vansh`](journals/1024170118-vansh/) |
 
-The documentation is under folder `docs`.
+## Contents
 
-All other aspects of code organisation are left to the
-discretion of the user(s).
+| Path | Contents |
+|------|----------|
+| [`project-proposal/`](project-proposal/) | Project proposal |
+| [`project-report-prototype-stage/`](project-report-prototype-stage/) | Prototype-stage report (mid-semester) |
+| [`project-report-final/`](project-report-final/) | Final report (end-semester) |
+| [`journals/`](journals/) | Weekly technical journal of each member |
+| [`docs/`](docs/) | Source of the project page |
+| [`code/`](code/) | Application source (git submodule) |
 
-
-## Docs
-
-As of now, the `docs` is just an organised collection
-of markdown (`md`) files.  But the build procedure is
-using [`mkdocs`](https://google.com/search?q=mkdocs)
-backend.  As a result, any commit into the `master`
-branch of github repository would result in CI/CD based
-build and deployment of the documentation including the
-journals.
-
-For a local DEV-version of the docs for viewing and
-testing, install the local env and issue the following
-command:
+Clone with the application code:
 
 ``` shell
-make docs
+git clone --recurse-submodules https://github.com/aviraj1576/ucs503p-202627-NeighborLend-project.git
 ```
 
-### Local `env` for `docs`
-
-``` shell
-
-```
+The project page is rebuilt by GitHub Actions on every push to `master`.
